@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <!-- css stuff -->
+    <!-- link to reset -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/sp-icon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tien Le Portfolio</title>
+</head>
+
+<body>
+    <div id="headerCon">
+        <div id="mainlogo">
+            <a href="index.hbs"></a>
+            <img src="images/whitelogo.png" alt="Logo">
+        </div>
+
+    <nav id="mainNav" data-module="nav">
+     <h2 class="hidden">Main navigation</h2>
+     <button id="button"></button>
+     <div id="burgerCon">
+       <ul id="burgerMenu">
+        <li><a href="home" class="nav-item">Home</a></li>
+        <li><a href="work" class="nav-item">Work</a></li>
+        <li><a href="contact" class="nav-item">Contact</a></li>
+       </ul>
+     </div>
+   </nav>
+    
+    </div>
+
+    <main>
+        {{{ body }}}
+    </main>
+
+    <footer>
+        <section class="socialMedia">
+            <h2 class="hidden">Social Media</h2>
+            <a href="http:github.com/tien-149" target="_blank">
+            <img class="socialIcon" src="images/github-icon.png" alt="Github icon" width="30" height="30">
+            </a>
+
+            <a href="http:instagram/rjta.ct" target="_blank">
+            <img class="socialIcon" src="images/insta-icon.png" alt="Instagram icon" width="30" height="30">
+            </a>
+
+            <a href="http:behance.com" target="_blank">
+            <img class="socialIcon" src="images/facebook-icon.png" alt="Behance icon" width="30" height="30">
+            </a>
+        </section>
+       <section class="footerNavCon">
+		<nav class="footerNav">
+			<h2 class="hidden">Footer Navigation</h2>
+				<ul>
+					<li><a href="home" class="nav-item">Home</a></li>
+                     <li><a href="work" class="nav-item">Work</a></li>
+                     <li><a href="contact" class="nav-item">Contact</a></li>
+				</ul>
+		</nav>
+		</section>
+        <p id="copyright">© 2019 Tien Le. All rights reserved.</p>
+    </footer>
+{{!-- 
+    <a id="to-top" href="#" class="nav-item">Back to top</a> --}}
+
+    <script type="module" src="js/main.js"></script>
+
+    
+</body>
+
+</html>

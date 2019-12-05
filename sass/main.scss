@@ -1,0 +1,13 @@
+@import '_vars';
+@import 'modules/_navbar';
+@import 'modules/_users';
+@import 'modules/_lightbox';
+@import 'modules/_errors';
+@import 'modules/_footer';
+@import 'modules/_homepage';
+@import 'modules/_contact';
+@import 'modules/_work';
+$mainfont-color:#eedbb0;
+
+.hidden{display:none;}
+body{background-color:#f6faf7;}
