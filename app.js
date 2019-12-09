@@ -13,9 +13,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use('/', require('./routes/index')); //this "/" one means index.js
 app.use((req, res, next)=>{
-    var err = new Error('Not Found');
+    var err = new Error();
     err.status = 404;
-    err.customMessage="Something just happen!";
+    err.customMessage="Page not found";
     next(err);
 })
 
